@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Repeating Text</title>
+<style>
+  body {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+  }
+</style>
+</head>
+<body>
+
+<p id="repeatingText"></p>
+
+<script>
+  const textElement = document.getElementById('repeatingText');
+  const text = "35i5ii ,i see the powers within unknow";
+
+  function updateText() {
+    textElement.innerText = (textElement.innerText === "") ? text : "";
+  }
+
+  setInterval(updateText, 0); // Repeat as fast as possible
+</script>
+
+</body>
+</html>
